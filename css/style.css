@@ -1,0 +1,126 @@
+:root {
+  --main-bg: #111a28;
+  --main-text: gray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/img/Layer5.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: var(--main-bg);
+  width: 85%;
+  height: 65%;
+  border-radius: 20px;
+  position: relative;
+}
+.logo {
+  margin: 20px 0 0 20px;
+}
+.product__model {
+  display: flex;
+  flex-direction: column;
+}
+span {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: flex;
+  margin: 90px 5px 0 5px;
+}
+span:hover {
+  transform: scale(1.5);
+  transition: 0.1s;
+  border: 0.5px solid var(--main-text);
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+}
+.dot1 {
+  background-color: white;
+}
+.dot2 {
+  background-color: black;
+}
+.dot3 {
+  background-color: red;
+}
+.dot4 {
+  background-color: green;
+}
+.container-product {
+  height: calc(100% - 57px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.product__description {
+  height: 80%;
+  width: 200px;
+  color: var(--main-text);
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.product__model_spec select {
+  width: 70px;
+  height: 30px;
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  font-size: 15px;
+}
+button {
+  width: 180px;
+  height: 40px;
+  background-color: #202835;
+  border: 1px solid var(--main-text);
+  color: var(--main-text);
+}
+.rating_block {
+  width: 125px;
+  height: 25px;
+}
+.star-rating {
+  font-size: 0;
+}
+.star-rating__wrap {
+  display: inline-block;
+  font-size: 1rem;
+}
+.star-rating__wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.star-rating__ico {
+  float: right;
+  padding-left: 2px;
+  cursor: pointer;
+  color: #ffb300;
+}
+.star-rating__ico:last-child {
+  padding-left: 0;
+}
+.star-rating__input {
+  display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before {
+  content: "\f005";
+}
