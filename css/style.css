@@ -13,7 +13,7 @@
 .wrapper {
   height: 100vh;
   width: 100%;
-  background-image: url(/img/Layer5.jpg);
+  background-image: url(img/Layer5.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
